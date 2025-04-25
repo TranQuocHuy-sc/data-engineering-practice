@@ -72,7 +72,7 @@ def main():
     insert_csv_to_table("data/transactions.csv", "transactions",
                         ["transaction_id", "transaction_date", "product_id", "product_code", "product_description", "quantity", "account_id"])
 
-    print("✅ Đã hoàn thành thành công!")
+    print("Đã hoàn thành thành công!")
 
 
 if __name__ == "__main__":
