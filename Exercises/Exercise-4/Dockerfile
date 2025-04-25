@@ -1,6 +1,10 @@
-FROM python:latest
+FROM python:3.10
 
-WORKDIR app
-COPY . /app
+WORKDIR /app
 
-RUN python3 -m pip install -r requirements.txt
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . /app/
+
+CMD ["python3", "main.py"]
