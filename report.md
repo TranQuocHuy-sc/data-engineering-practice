@@ -140,6 +140,10 @@ Download process completed.
 
 Kết quả sẽ xuất ra 1 file csv có tên là weather_data.csv
 
+# Exercise 3
+-Chạy lệnh docker-compose up --build run: vừa build vừa run
+![image](https://github.com/user-attachments/assets/f823e070-d900-45a6-b75a-70edba318ca1)
+
 # Excersice 4
 -Docker-compose.yml
 ![image](https://github.com/user-attachments/assets/de48a458-bcf2-4680-8ff0-dd063717cea6)
