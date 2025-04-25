@@ -167,7 +167,31 @@ và xuất về 4 file csv có dữ liệu bên trong
 ![image](https://github.com/user-attachments/assets/8b6d45f2-cb8b-450d-9e94-9ea3a72faf9b)
 
 
+# Exercise 5
+1. build image
+![image](https://github.com/user-attachments/assets/4a07e879-49b9-4393-8f8a-cb2ef414b9d4)
 
+2. docker-compose up -d
+Lệnh này khởi động một container PostgreSQL
+
+- Tạo bảng, đọc file CSV và inser vào bảng bằng Python
+![image](https://github.com/user-attachments/assets/57b1e829-e4e0-4eeb-9f53-c22563e76f8f)
+
+- Hàm execute_sql_file(filename): chạy toàn bộ câu lệnh trong file SQL
+- Hàm insert_csv_to_table()
+
+Từng bước:
+1. Kết nối database
+2. Dùng csv.reader() để đọc từng dòng
+3. Dùng next(reader) để bỏ dòng tiêu đề cột
+4. Với mỗi dòng còn lại:
+    Dùng cur.execute() để chèn vào bảng
+Dùng docker-compose run run để chạy
+![image](https://github.com/user-attachments/assets/dc5425cb-40ae-45c0-b34c-7410d4a5d855)
+5. Kết quả kiểm tra lại dữ liẹu có bên trong PostgreSQL chưa?
+![image](https://github.com/user-attachments/assets/acdf6d2b-1fcf-4bbe-991a-1fc9513af5f1)
+
+docker exec -it excercise-5postgres-1 psql -U postgres: dùng lệnh này để vào trong container
 
 
 
