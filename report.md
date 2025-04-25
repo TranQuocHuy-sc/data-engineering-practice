@@ -143,6 +143,7 @@ Kết quả sẽ xuất ra 1 file csv có tên là weather_data.csv
 # Exercise 3
 -Chạy lệnh docker-compose up --build run: vừa build vừa run
 ![image](https://github.com/user-attachments/assets/f823e070-d900-45a6-b75a-70edba318ca1)
+![image](https://github.com/user-attachments/assets/a10c1217-5531-4dfe-87ed-458f792cc545)
 
 # Excersice 4
 -Docker-compose.yml
